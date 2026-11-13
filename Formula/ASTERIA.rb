@@ -1,9 +1,8 @@
 class Asteria < Formula
-  desc "NASA SPHEREx Sky Survey Time-Domain Research Tool"
-  homepage "https://example.com/asteria"
-  # URL needs to be updated to the actual repository/tarball source.
-  url "https://example.com/asteria-1.0.0.tar.gz"
-  sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" # Placeholder
+  desc "ASTERIA Research Tool (Node 24 / Electron Launcher) Astronomical SPHEREx Time-series Extraction & Rapid Image Analysis"
+  homepage "https://quantal-labs.com/asteria"
+  url "https://github.com/Quantal-Universe/ASTERIA/archive/refs/tags/v1.0.0.tar.gz"
+  sha256 "3199238a5995e61959552ef38a62e074c8936d57efd923726705d0294607e72a" 
 
   def install
     # Install all files into libexec

@@ -11,7 +11,7 @@ class Asteria < Formula
     # Create the wrapper script that runs launch.sh
     (bin/"ASTERIA").write <<~EOS
       #!/bin/bash
-      #{libexec}/launch.sh "$@"
+      #{libexec}/src/launch.sh "$@"
     EOS
   end
 

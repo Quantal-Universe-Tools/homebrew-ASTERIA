@@ -8,8 +8,10 @@ class Asteria < Formula
   depends_on "simdjson"
   
   def install
-    # Install dependencies
-    system "npm", "install"
+    # Install dependencies inside src/
+    Dir.chdir("src") do
+      system "npm", "install"
+    end
 
     # Install all files into libexec
     libexec.install Dir["*"]

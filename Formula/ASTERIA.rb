@@ -3,7 +3,10 @@ class Asteria < Formula
   homepage "https://quantal-labs.com/asteria"
   url "https://github.com/Quantal-Universe/ASTERIA/archive/refs/tags/v2.0.0.tar.gz"
   sha256 "b2618ab6f7aa8956ba64d9fd1139ffa29ff5d5db3e822839970c54104dcb766f" 
-
+  
+  depends_on "node"
+  depends_on "simdjson"
+  
   def install
     # Install all files into libexec
     libexec.install Dir["*"]
